@@ -2,11 +2,10 @@ from kubiya_sdk.tools import Arg
 from .base import AzureCliTool
 from kubiya_sdk.tools.registry import tool_registry
 
-
 azure_cli_tool = AzureCliTool(
     name="azure_cli",
     description="Logs in to Azure CLI and then runs the specified command.",
-    content="az {{.command}}",
+    content="az {{ .command}}",
     args=[
         Arg(name="command",
             type="str",
@@ -15,4 +14,4 @@ azure_cli_tool = AzureCliTool(
     ],
 )
 
-tool_registry.register("azure_cli", azure_cli_tool)
+tool_registry.register("Azure", azure_cli_tool)
