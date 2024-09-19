@@ -1,4 +1,4 @@
-from kubiya_sdk.tools import Tool
+from kubiya_sdk.tools.models import Tool
 from .common import COMMON_ENVIRONMENT_VARIABLES
 
 #AZURE_ICON_URL = 
