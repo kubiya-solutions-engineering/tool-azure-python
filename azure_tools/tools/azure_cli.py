@@ -15,4 +15,4 @@ azure_cli_tool = AzureCliTool(
     ],
 )
 
-tool_registry.register("azure_cli", azure_cli_tool)
+tool_registry.register("Azure", azure_cli_tool)
