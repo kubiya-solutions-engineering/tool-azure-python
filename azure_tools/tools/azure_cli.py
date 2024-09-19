@@ -1,5 +1,5 @@
 from kubiya_sdk.tools import Arg
-from .base import AzureCliTool
+from .base import AzureTool
 from kubiya_sdk.tools.registry import tool_registry
 
 azure_cli_tool = AzureTool(
