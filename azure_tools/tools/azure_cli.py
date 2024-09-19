@@ -2,8 +2,7 @@ from kubiya_sdk.tools import Arg
 from .base import AzureCliTool
 from kubiya_sdk.tools.registry import tool_registry
 
-
-azure_cli_tool = AzureCliTool(
+azure_cli_tool = AzureTool(
     name="azure_cli",
     description="Logs in to Azure CLI and then runs the specified command.",
     content="az {{ .command}}",
