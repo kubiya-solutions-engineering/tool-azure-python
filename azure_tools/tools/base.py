@@ -1,7 +1,7 @@
 from kubiya_sdk.tools.models import Tool
 from .common import COMMON_ENVIRONMENT_VARIABLES
 
-#AZURE_ICON_URL = 
+AZURE_ICON_URL = "https://azure.microsoft.com/svghandler/azure-logo/?width=300&height=300"
 SCRIPT_LOGIN   = "az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET --tenant $AZURE_TENANT_ID"
 
 class AzureCliTool(Tool):
@@ -12,7 +12,7 @@ class AzureCliTool(Tool):
         super().__init__(
             name=name,
             description=description,
-            icon_url="https://azure.microsoft.com/svghandler/azure-logo/?width=300&height=300",
+            icon_url=AZURE_ICON_URL,
             type="docker",
             image="mcr.microsoft.com/azure-cli:latest",
             content=full_content,
