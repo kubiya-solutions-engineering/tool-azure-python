@@ -18,6 +18,7 @@ class AzureCliTool(Tool):
             content=full_content,
             args=args,
             env=COMMON_ENVIRONMENT_VARIABLES,
+            secrets=COMMON_SECRET_VARIABLES,
             long_running=long_running,
             mermaid_diagram=mermaid_diagram
         )
